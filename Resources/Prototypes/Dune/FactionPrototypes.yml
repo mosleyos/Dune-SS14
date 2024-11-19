@@ -1,0 +1,10 @@
+- type: entity
+  id: AtreidesFaction
+  name: Atreides
+  description: "The noble House Atreides, led by Duke Leto Atreides, rulers of Arrakis."
+  components:
+    - faction:
+        id: AtreidesFaction
+    - faction-control:
+        faction: Atreides
+        control-level: 80

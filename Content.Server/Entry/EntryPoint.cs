@@ -164,6 +164,11 @@ namespace Content.Server.Entry
             }
         }
 
+	public override void RegisterClientDependencies()
+	{
+		IoCManager.Register<FactionManager, FactionManager>(true);
+	}
+
         public override void Update(ModUpdateLevel level, FrameEventArgs frameEventArgs)
         {
             base.Update(level, frameEventArgs);
